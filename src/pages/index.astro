@@ -1,0 +1,584 @@
+---
+import SliderSmall from "../components/SliderSmall.astro";
+import "../styles/global.css";
+import "swiper/css";
+---
+
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>The Delovery - Surprise Breakfasts &amp; Gifts</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#1d0c0e] dark:text-gray-100 antialiased selection:bg-primary selection:text-white"
+  >
+    <nav
+      class="sticky top-0 z-50 w-full border-b border-[#f4e6e7] dark:border-gray-800 bg-[#fcf8f8]/90 dark:bg-[#1f282e]/90 backdrop-blur-md"
+    >
+      <div
+        class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="flex size-8 items-center justify-center rounded-full bg-primary text-white"
+          >
+            <span class="material-symbols-outlined text-xl">redeem</span>
+          </div>
+          <h1
+            class="text-xl font-extrabold tracking-tight text-[#1d0c0e] dark:text-white"
+          >
+            THE DELOVERY
+          </h1>
+        </div>
+        <a
+          class="flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-white transition-transform hover:scale-105 hover:bg-primary-hover active:scale-95 cursor-pointer"
+          href="#menu"
+        >
+          <span class="hidden sm:inline">Pedir Ahora</span>
+          <span class="sm:hidden">Menú</span>
+          <span class="material-symbols-outlined text-base">arrow_downward</span
+          >
+        </a>
+      </div>
+    </nav>
+    <main class="flex flex-col items-center w-full">
+      <section class="w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-900 shadow-xl"
+        >
+          <div class="absolute inset-0 z-0">
+            <img
+              alt="Top view of a colorful surprise gift box with confetti and treats"
+              class="h-full w-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"
+              data-alt="Top view of a colorful surprise gift box with confetti and treats"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcjzC-jqdWeKpEyCT_rODwvnAgbWF8mm-JPGem0Mf24ysVgIrUEq1NjZD2VGpUEJCmDObimsHQc6KLXMbDXJipqqdhjmf2tkrgwfmY0puAxYZ6VGYaRYkGn8_b3xih5BPnu9WDTr7vpCpkdqbzi3FLXKvj4fK-4MiHcE8uG7TEDtlKeFi4JeAgT52P1NenZpE4sKL9ERq8vcsxw7ySHD-5eFEcWD94jFd-g5nlFF16XgnSutvbr_SbVh2zfe2cO4GsMJCtG4nupMPP"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"
+            >
+            </div>
+            <div
+              class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/30 blur-3xl filter"
+            >
+            </div>
+          </div>
+          <div
+            class="relative z-10 flex min-h-[500px] flex-col justify-center px-6 py-12 sm:px-12 md:max-w-3xl"
+          >
+            <span
+              class="mb-4 inline-flex w-fit items-center gap-1 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm"
+            >
+              <span class="material-symbols-outlined text-sm">bolt</span>
+              Zapopan &amp; GDL
+            </span>
+            <h2
+              class="mb-4 text-4xl font-black leading-[1.1] tracking-tight text-white sm:text-5xl md:text-7xl"
+            >
+              No mandes solo un mensaje. <br />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[#FFDE7A] to-primary"
+                >Manda una experiencia.</span
+              >
+            </h2>
+            <p
+              class="mb-8 text-lg font-medium text-gray-200 sm:text-xl max-w-xl"
+            >
+              Desayunos sorpresa y regalos curados que dicen "Te quiero" mejor
+              que cualquier DM.
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a
+                class="group flex h-12 w-fit items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-bold text-white transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/30"
+                href="#menu"
+              >
+                Ver Menú
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-y-1"
+                  >arrow_downward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="flex w-full max-w-7xl flex-col gap-16 px-4 py-12 sm:px-6 lg:px-8"
+        id="menu"
+      >
+        <SliderSmall />
+
+        <section>
+          <div class="mb-8 flex flex-col items-center text-center">
+            <h3
+              class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] dark:text-white sm:text-3xl"
+            >
+              MORNING VIBES <span class="text-orange-400">☀️</span>
+            </h3>
+            <p class="text-primary font-medium">
+              La mejor forma de empezar el día.
+            </p>
+          </div>
+          <div class="swiper morningSwiper !pb-12 !px-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a
+                  class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300"
+                  href="https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20Bagel%20Sunrise%20Pack%20de%20la%20categoría%20MORNING%20VIBES."
+                  target="_blank"
+                >
+                  <div class="h-48 w-full overflow-hidden bg-gray-100">
+                    <img
+                      alt="Full breakfast spread with bagel, juice, and fruit"
+                      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-6">
+                    <div class="mb-3 flex gap-2">
+                      <span
+                        class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >bakery_dining</span
+                        >
+                      </span>
+                      <span
+                        class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >local_cafe</span
+                        >
+                      </span>
+                      <span
+                        class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >nutrition</span
+                        >
+                      </span>
+                    </div>
+                    <h4
+                      class="mb-2 text-xl font-bold text-gray-900 dark:text-white"
+                    >
+                      Bagel Sunrise Pack
+                    </h4>
+                    <p
+                      class="mb-4 line-clamp-2 text-sm text-gray-600 dark:text-gray-300"
+                    >
+                      Bagel premium con queso crema, jugo de naranja natural,
+                      fruta picada de temporada y un cold brew.
+                    </p>
+                    <div
+                      class="mt-auto flex items-center justify-between gap-4 border-t border-gray-100 dark:border-gray-700 pt-4"
+                    >
+                      <span
+                        class="text-xl font-bold text-[#1d0c0e] dark:text-white"
+                        >$450</span
+                      >
+                      <div
+                        class="flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat</span
+                        >
+                        LO QUIERO
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide h-auto">
+                <a
+                  class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300"
+                  href="https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20Pancake%20Heaven%20de%20la%20categoría%20MORNING%20VIBES."
+                  target="_blank"
+                >
+                  <div class="h-48 w-full overflow-hidden bg-gray-100">
+                    <img
+                      alt="Pancakes with syrup and berries on a breakfast tray"
+                      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUEWV1K-Kbc1BQpz08mX8xifIoqsW7F6VY3wyERjS0Q9D3b4vI1hOeyX7SoyK0NSI8d07FjezLM25EysR3lTuXhoKbKXjBA2Qam4Fw5gAo95_InkyY_3XkdCilGkpIskQRZpR_rw8QpmWKm1Wg45QksUgCl1G8wX1HzcP5Dm3mkbel948PXyuznCG03I7gZPTNFC64sMZpvfsFu4PD--VE2VwoWd_EKh9I_XGQeKSY0iKIczA2YwPksJ4ntsLUk0y-XY3rJG6r9cyD"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-6">
+                    <div class="mb-3 flex gap-2">
+                      <span
+                        class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >egg_alt</span
+                        >
+                      </span>
+                      <span
+                        class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >local_bar</span
+                        >
+                      </span>
+                    </div>
+                    <h4
+                      class="mb-2 text-xl font-bold text-gray-900 dark:text-white"
+                    >
+                      Pancake Heaven
+                    </h4>
+                    <p
+                      class="mb-4 line-clamp-2 text-sm text-gray-600 dark:text-gray-300"
+                    >
+                      Hot cakes esponjosos, miel de maple orgánica, bowl de
+                      frutos rojos, y mimosas para celebrar.
+                    </p>
+                    <div
+                      class="mt-auto flex items-center justify-between gap-4 border-t border-gray-100 dark:border-gray-700 pt-4"
+                    >
+                      <span
+                        class="text-xl font-bold text-[#1d0c0e] dark:text-white"
+                        >$520</span
+                      >
+                      <div
+                        class="flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat</span
+                        >
+                        LO QUIERO
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next hidden sm:flex"></div>
+            <div class="swiper-button-prev hidden sm:flex"></div>
+          </div>
+        </section>
+        <section>
+          <div class="mb-8 flex flex-col items-center text-center">
+            <h3
+              class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] dark:text-white sm:text-3xl"
+            >
+              BIG LOVE <span class="text-primary">❤️</span>
+            </h3>
+            <p class="text-gold font-medium">
+              Para cuando sobran las palabras.
+            </p>
+          </div>
+          <div class="swiper loveSwiper !pb-12 !px-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  class="block group relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-surface-light dark:bg-surface-dark p-1 shadow-gold hover:shadow-pop-hover transition-all"
+                  href="https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20The%20Ultimate%20Romance%20de%20la%20categoría%20BIG%20LOVE."
+                  target="_blank"
+                >
+                  <div class="grid md:grid-cols-2">
+                    <div
+                      class="relative h-64 md:h-auto overflow-hidden rounded-xl md:rounded-r-none"
+                    >
+                      <img
+                        alt="Luxurious gift set with flowers and champagne"
+                        class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK-b6YyG3Gn20lhSRlMEH-5Cd5M2YV2v0TlCmqNTQ9hU9rKNpaBbRJJvO4guTntUu8Dd5kzcc91o1iAZPuGG5Cd9Qfg2X8cCtgUcjwEiq21KFLl97iMx_E-R3-wa8Y34qD3FNCyNt23jC15YKl84yABIch7D2u2X7dBDQLG1UqvcHwf0rcJ8hd8hHEvgh-jPmt-9wEYSO17wIY9xe8AVMiYUFax3x64tAEZP73nZ6BaBBBiTyyKEqf0hSw0ghgCfRS5pMX8YizOH0R"
+                      />
+                      <div
+                        class="absolute top-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+                      >
+                        Premium
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-center p-6 md:p-8">
+                      <h4
+                        class="mb-2 text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        The Ultimate Romance
+                      </h4>
+                      <p class="mb-6 text-gray-600 dark:text-gray-300">
+                        La experiencia completa. Incluye arreglo floral grande,
+                        botella de Moët &amp; Chandon, chocolates artesanales y
+                        tarjeta personalizada en papel algodón.
+                      </p>
+                      <ul class="mb-8 space-y-2">
+                        <li
+                          class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300"
+                        >
+                          <span class="material-symbols-outlined text-gold"
+                            >check_circle</span
+                          >
+                          12 Rosas rojas premium
+                        </li>
+                        <li
+                          class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300"
+                        >
+                          <span class="material-symbols-outlined text-gold"
+                            >check_circle</span
+                          >
+                          Champagne 750ml
+                        </li>
+                        <li
+                          class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300"
+                        >
+                          <span class="material-symbols-outlined text-gold"
+                            >check_circle</span
+                          >
+                          Entrega VIP Programada
+                        </li>
+                      </ul>
+                      <div
+                        class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+                      >
+                        <span
+                          class="text-3xl font-black text-[#1d0c0e] dark:text-white"
+                          >$2,500</span
+                        >
+                        <div
+                          class="flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-whatsapp px-8 py-3 text-base font-bold text-white shadow-lg transition-transform group-hover:-translate-y-1 group-hover:shadow-xl group-hover:bg-whatsapp-hover"
+                        >
+                          <span class="material-symbols-outlined">chat</span>
+                          LO QUIERO
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="w-full py-4">
+          <h4 class="mb-4 px-4 text-lg font-bold text-gray-900 dark:text-white">
+            ✨ Agrega un extra
+          </h4>
+          <div
+            class="scrollbar-hide flex snap-x gap-4 overflow-x-auto px-4 pb-4"
+          >
+            <div class="snap-start shrink-0">
+              <div
+                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
+                >
+                  🎈
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-gray-900 dark:text-white">
+                    Globos
+                  </p>
+                  <p class="text-xs text-gray-500">+$150</p>
+                </div>
+                <div
+                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-sm">add</span>
+                </div>
+              </div>
+            </div>
+            <div class="snap-start shrink-0">
+              <div
+                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
+                >
+                  💐
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-gray-900 dark:text-white">
+                    Flores Extra
+                  </p>
+                  <p class="text-xs text-gray-500">+$300</p>
+                </div>
+                <div
+                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-sm">add</span>
+                </div>
+              </div>
+            </div>
+            <div class="snap-start shrink-0">
+              <div
+                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
+              >
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
+                >
+                  📸
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-gray-900 dark:text-white">
+                    Polaroid
+                  </p>
+                  <p class="text-xs text-gray-500">+$50</p>
+                </div>
+                <div
+                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-sm">add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="rounded-3xl bg-white dark:bg-[#252b36] p-8 sm:p-12 shadow-sm"
+        >
+          <h3
+            class="mb-10 text-center text-2xl font-bold text-[#1d0c0e] dark:text-white"
+          >
+            ¿Cómo funciona?
+          </h3>
+          <div class="grid gap-8 sm:grid-cols-3">
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary"
+              >
+                <span class="material-symbols-outlined text-3xl">touch_app</span
+                >
+              </div>
+              <h4 class="mb-2 text-lg font-bold dark:text-white">
+                1. Elige tu sorpresa
+              </h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Navega por nuestro menú y selecciona el paquete perfecto para la
+                ocasión.
+              </p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary"
+              >
+                <span class="material-symbols-outlined text-3xl">chat</span>
+              </div>
+              <h4 class="mb-2 text-lg font-bold dark:text-white">
+                2. Confirma en WhatsApp
+              </h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Al dar click, hablarás directo con nosotros para personalizar
+                detalles y pagar.
+              </p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >local_shipping</span
+                >
+              </div>
+              <h4 class="mb-2 text-lg font-bold dark:text-white">
+                3. Recibe y Disfruta
+              </h4>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Entregamos en la puerta de tu casa u oficina en el horario
+                acordado.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer
+        class="mt-auto w-full border-t border-[#f4e6e7] dark:border-gray-800 bg-white dark:bg-[#1f282e] py-10"
+      >
+        <div
+          class="mx-auto flex max-w-5xl flex-col gap-8 px-6 text-center sm:text-left sm:flex-row sm:justify-between"
+        >
+          <div>
+            <div
+              class="flex items-center justify-center sm:justify-start gap-2 mb-4"
+            >
+              <div
+                class="flex size-6 items-center justify-center rounded-full bg-primary text-white"
+              >
+                <span class="material-symbols-outlined text-sm">redeem</span>
+              </div>
+              <span class="text-lg font-bold text-[#1d0c0e] dark:text-white"
+                >THE DELOVERY</span
+              >
+            </div>
+            <p
+              class="max-w-xs text-sm text-gray-500 dark:text-gray-400 mx-auto sm:mx-0"
+            >
+              Creando momentos inolvidables en Guadalajara y Zapopan.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-300"
+          >
+            <h5 class="font-bold text-[#1d0c0e] dark:text-white">
+              Horarios de Entrega
+            </h5>
+            <p>Lunes a Viernes: 7:00 AM - 2:00 PM</p>
+            <p>Sábados y Domingos: 8:00 AM - 1:00 PM</p>
+          </div>
+          <div
+            class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-300"
+          >
+            <h5 class="font-bold text-[#1d0c0e] dark:text-white">Contacto</h5>
+            <a class="hover:text-primary transition-colors" href="#"
+              >Instagram</a
+            >
+            <a class="hover:text-primary transition-colors" href="#">Facebook</a
+            >
+            <a class="hover:text-primary transition-colors" href="#">WhatsApp</a
+            >
+          </div>
+        </div>
+        <div class="mt-10 text-center text-xs text-gray-400">
+          © 2023 The Delovery. Todos los derechos reservados.
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script>
+      import Swiper from "swiper";
+      document.addEventListener("DOMContentLoaded", function () {
+        // Joy Drops Swiper
+
+        // Morning Vibes Swiper
+        new Swiper(".morningSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+          },
+        });
+        // Big Love Swiper
+        new Swiper(".loveSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          // Since it's a single item by default, logic allows for more if added later
+        });
+      });
+    </script>
+  </body>
+</html>

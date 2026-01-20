@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Colores Personalizados --- */
+  --color-primary: #ff4757;
+  --color-primary-hover: #ff6b81;
+  --color-background-light: #f9fafa;
+  --color-background-dark: #1f282e;
+  --color-whatsapp: #3dcc5c;
+  --color-whatsapp-hover: #2abf4a;
+  --color-gold: #d4af37;
+  --color-teal-accent: #00d2d3;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #2f3542;
+
+  /* --- Tipografía --- */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  /* --- Bordes --- */
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* --- Sombras --- */
+  --shadow-pop: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-pop-hover: 0 20px 40px -10px rgba(255, 71, 87, 0.2);
+  --shadow-gold: 0 10px 30px -5px rgba(212, 175, 55, 0.15);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+:root {
+  --swiper-theme-color: #ff4757;
+  --swiper-pagination-bullet-inactive-color: #cbd5e1;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff4757;
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 4px;
+  transition: width 0.3s;
+}

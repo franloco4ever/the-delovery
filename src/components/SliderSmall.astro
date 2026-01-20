@@ -1,0 +1,111 @@
+---
+import productsData from "../data/paquetes.json";
+
+const smallPacks = productsData.filter((item) => item.size == "chico");
+
+console.log(smallPacks);
+---
+
+<section>
+  <div class="mb-8 flex flex-col items-center text-center">
+    <h3
+      class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] dark:text-white sm:text-3xl"
+    >
+      JOY DROPS <span class="text-blue-400">💧</span>
+    </h3>
+    <p class="text-primary font-medium">
+      Detalles pequeños, sonrisas gigantes.
+    </p>
+  </div>
+
+  <div class="swiper joySwiper !pb-12 !px-1">
+    <div class="swiper-wrapper !h-auto">
+      {
+        smallPacks.map((el) => {
+          return (
+            <div class="swiper-slide !h-auto">
+              <a
+                class="group relative flex flex-col h-full overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm hover:shadow-pop transition-all border border-gray-100 dark:border-gray-700"
+                href={`https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20${el.name}%20de%20la%20categoría%20JOY%20DROPS.`}
+                target="_blank"
+              >
+                <div class="aspect-square w-full overflow-hidden bg-gray-200">
+                  <img
+                    alt="media"
+                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    src={el.img}
+                  />
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  {/* <div class="mb-2 flex flex-wrap gap-1">
+                    <span class="inline-flex items-center rounded-md bg-teal-accent/10 px-1.5 py-0.5 text-[10px] font-bold text-teal-700 dark:text-teal-300">
+                      🍪 Cookies
+                    </span>
+                    <span class="inline-flex items-center rounded-md bg-teal-accent/10 px-1.5 py-0.5 text-[10px] font-bold text-teal-700 dark:text-teal-300">
+                      🥛 Milk
+                    </span>
+                  </div> */}
+                  <h4 class="mb-1 text-lg font-bold leading-tight text-gray-900 dark:text-white first-letter:capitalize">
+                    {el.name}
+                  </h4>
+                  <ul class="mb-4 text-sm text-gray-600 dark:text-gray-300 list-disc ml-4">
+                    {el.content.map((el) => {
+                      return <li>{el}</li>;
+                    })}
+                  </ul>
+                  <p class="mb-4 text-sm font-semibold text-gray-500 dark:text-gray-400">
+                    ${el.price} MXN
+                  </p>
+                  <div class="mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-whatsapp py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-whatsapp-hover">
+                    <span class="material-symbols-outlined text-[18px]">
+                      chat
+                    </span>
+                    LO QUIERO
+                  </div>
+                </div>
+              </a>
+            </div>
+          );
+        })
+      }
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next hidden sm:flex"></div>
+    <div class="swiper-button-prev hidden sm:flex"></div>
+  </div>
+</section>
+<script>
+  import Swiper from "swiper";
+  import { Pagination, Navigation, Autoplay } from "swiper/modules";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Joy Drops Swiper
+    new Swiper(".joySwiper", {
+      modules: [Pagination, Navigation, Autoplay],
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoplay: {
+        disableOnInteraction: true,
+        delay: 4000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  });
+</script>

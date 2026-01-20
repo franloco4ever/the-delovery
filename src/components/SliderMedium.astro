@@ -1,0 +1,109 @@
+---
+import productsData from "../data/paquetes.json";
+
+const mediumPacks = productsData.filter((item) => item.size == "mediano");
+---
+
+<section>
+  <div class="mb-8 flex flex-col items-center text-center">
+    <h3
+      class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] dark:text-white sm:text-3xl"
+    >
+      MORNING VIBES <span class="text-orange-400">☀️</span>
+    </h3>
+    <p class="text-primary font-medium">La mejor forma de empezar el día.</p>
+  </div>
+  <div class="swiper morningSwiper !pb-12 !px-1">
+    <div class="swiper-wrapper">
+      {
+        mediumPacks.map((el) => {
+          return (
+            <div class="swiper-slide !h-auto">
+              <a
+                class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300"
+                href={`https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20${el.name}%20Pack%20de%20la%20categoría%20MORNING%20VIBES.`}
+                target="_blank"
+              >
+                <div class="h-48 w-full overflow-hidden bg-gray-100">
+                  <img
+                    alt="Full breakfast spread with bagel, juice, and fruit"
+                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src={el.img}
+                  />
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <div class="mb-3 flex gap-2">
+                    <span class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300">
+                      <span class="material-symbols-outlined text-[16px]">
+                        bakery_dining
+                      </span>
+                    </span>
+                    <span class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300">
+                      <span class="material-symbols-outlined text-[16px]">
+                        local_cafe
+                      </span>
+                    </span>
+                    <span class="flex items-center justify-center rounded-full bg-orange-100 p-1.5 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300">
+                      <span class="material-symbols-outlined text-[16px]">
+                        nutrition
+                      </span>
+                    </span>
+                  </div>
+                  <h4 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+                    {el.name}
+                  </h4>
+                  <ul class="mb-4 text-sm text-gray-600 dark:text-gray-300 list-disc ml-4">
+                    {el.content.map((el) => {
+                      return <li>{el}</li>;
+                    })}
+                  </ul>
+                  <div class="mt-auto flex items-center justify-between gap-4 border-t border-gray-100 dark:border-gray-700 pt-4">
+                    <span class="text-xl font-bold text-[#1d0c0e] dark:text-white">
+                      ${el.price} MXN
+                    </span>
+                    <div class="flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover">
+                      <span class="material-symbols-outlined text-[18px]">
+                        chat
+                      </span>
+                      LO QUIERO
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          );
+        })
+      }
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next hidden sm:flex"></div>
+    <div class="swiper-button-prev hidden sm:flex"></div>
+  </div>
+</section>
+<script>
+  import Swiper from "swiper";
+  import { Pagination, Navigation, Autoplay } from "swiper/modules";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Morning Vibes Swiper
+    new Swiper(".morningSwiper", {
+      modules: [Pagination, Navigation, Autoplay],
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+      },
+    });
+  });
+</script>

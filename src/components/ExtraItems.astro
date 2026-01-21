@@ -1,4 +1,6 @@
 ---
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import extraItemsData from "../data/extras.json";
 
 const itemsArray = extraItemsData.productos_extra;
@@ -11,27 +13,99 @@ const itemsArray = extraItemsData.productos_extra;
   <div
     class="scrollbar-hide flex snap-x gap-4 overflow-x-auto px-4 pb-4 h-auto"
   >
-    {
-      itemsArray.map((item) => {
-        return (
-          <div class="snap-start shrink-0 h-auto">
-            <div class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform">
-                🎈
+    <div class="w-full overflow-hidden swiper extrasSlider py-2">
+      <div class="swiper-wrapper h-auto!">
+        {
+          itemsArray.map((item) => {
+            return (
+              <div
+                data-item-id={item.id}
+                data-item-name={item.name}
+                data-item-image={item.img}
+                data-item-price={item.price}
+                class="add-to-cart-extra swiper-slide h-auto!"
+              >
+                <div class="snap-start shrink-0 h-auto">
+                  <div class="h-auto flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform">
+                      🎈
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-gray-900 dark:text-white">
+                        {item.name}
+                      </p>
+                      <p class="text-xs text-gray-500">+${item.price}</p>
+                    </div>
+                    <div class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors">
+                      <span class="material-symbols-outlined text-sm">add</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p class="text-sm font-bold text-gray-900 dark:text-white">
-                  {item.name}
-                </p>
-                <p class="text-xs text-gray-500">+${item.price}</p>
-              </div>
-              {/* <div class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors">
-                <span class="material-symbols-outlined text-sm">add</span>
-              </div> */}
-            </div>
-          </div>
-        );
-      })
-    }
+            );
+          })
+        }
+      </div>
+
+      <div class="swiper-button-next hidden sm:flex"></div>
+      <div class="swiper-button-prev hidden sm:flex"></div>
+    </div>
   </div>
 </section>
+<script>
+  import Swiper from "swiper";
+  import { Navigation } from "swiper/modules";
+  import { isCartOpen, addCartItem } from "../atoms/cardStore";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".extrasSlider", {
+      modules: [Navigation],
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
+      },
+    });
+
+    const addToCartButtons = document.querySelectorAll(".add-to-cart-extra");
+
+    addToCartButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const btn = e.currentTarget as HTMLButtonElement;
+        const itemId = btn.dataset.itemId;
+        const itemName = btn.dataset.itemName;
+        const itemImage = btn.dataset.itemImage;
+        const itemPrice = parseFloat(btn.dataset.itemPrice || "0");
+
+        if (itemId && itemName) {
+          addCartItem({
+            id: itemId,
+            name: itemName,
+            imageSrc: itemImage ?? "",
+            price: itemPrice,
+          });
+
+          // Opcional: Abrir el carrito automáticamente
+          isCartOpen.set(true);
+
+          // Opcional: Feedback visual
+          // btn.textContent = "¡AGREGADO!";
+          // setTimeout(() => {
+          //   btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">chat</span> LO QUIERO`;
+          // }, 1000);
+        }
+      });
+    });
+  });
+</script>

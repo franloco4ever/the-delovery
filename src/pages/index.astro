@@ -238,13 +238,45 @@ import "swiper/css";
       </footer>
       <ShoppingCart client:only="react" />
       <script>
-        import { isCartOpen } from "../atoms/cardStore";
+        import { isCartOpen, addCartItem } from "../atoms/cardStore";
 
         const shopping_cart_btn = document.querySelector(
           "#shopping_cart_btn",
         ) as HTMLButtonElement;
         shopping_cart_btn.addEventListener("click", () => {
           isCartOpen.set(!isCartOpen.get());
+        });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+          addToCartButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+              const btn = e.currentTarget as HTMLButtonElement;
+              const itemId = btn.dataset.itemId;
+              const itemName = btn.dataset.itemName;
+              const itemImage = btn.dataset.itemImage;
+              const itemPrice = parseFloat(btn.dataset.itemPrice || "0");
+
+              if (itemId && itemName && itemImage) {
+                addCartItem({
+                  id: itemId,
+                  name: itemName,
+                  imageSrc: itemImage,
+                  price: itemPrice,
+                });
+
+                // Opcional: Abrir el carrito automáticamente
+                isCartOpen.set(true);
+
+                // Opcional: Feedback visual
+                btn.textContent = "¡AGREGADO!";
+                setTimeout(() => {
+                  btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">chat</span> LO QUIERO`;
+                }, 1000);
+              }
+            });
+          });
         });
       </script>
     </main>

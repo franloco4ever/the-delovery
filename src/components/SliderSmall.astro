@@ -79,19 +79,14 @@ import "swiper/css/pagination";
 </section>
 <script>
   import Swiper from "swiper";
-  import { Pagination, Navigation, Autoplay } from "swiper/modules";
-  import { addCartItem, isCartOpen } from "../atoms/cardStore";
+  import { Pagination, Navigation } from "swiper/modules";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Joy Drops Swiper
     new Swiper(".joySwiper", {
-      modules: [Pagination, Navigation, Autoplay],
+      modules: [Pagination, Navigation],
       slidesPerView: 1,
       spaceBetween: 20,
-      autoplay: {
-        disableOnInteraction: true,
-        delay: 4000,
-      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -110,37 +105,6 @@ import "swiper/css/pagination";
           spaceBetween: 20,
         },
       },
-    });
-  });
-
-  // Agregar event listeners a los botones
-  const addToCartButtons = document.querySelectorAll(".add-to-cart");
-
-  addToCartButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-      const btn = e.currentTarget as HTMLButtonElement;
-      const itemId = btn.dataset.itemId;
-      const itemName = btn.dataset.itemName;
-      const itemImage = btn.dataset.itemImage;
-      const itemPrice = parseFloat(btn.dataset.itemPrice || "0");
-
-      if (itemId && itemName && itemImage) {
-        addCartItem({
-          id: itemId,
-          name: itemName,
-          imageSrc: itemImage,
-          price: itemPrice,
-        });
-
-        // Opcional: Abrir el carrito automáticamente
-        isCartOpen.set(true);
-
-        // Opcional: Feedback visual
-        btn.textContent = "¡AGREGADO!";
-        setTimeout(() => {
-          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">chat</span> LO QUIERO`;
-        }, 1000);
-      }
     });
   });
 </script>

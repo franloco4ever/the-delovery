@@ -4,7 +4,7 @@
     "size": "chico",
     "name": "Joy 1",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-01.png",
     "content": [
       "Cajita de cartón",
       "Peluche (chico) a elegir según temporada",
@@ -17,7 +17,7 @@
     "size": "chico",
     "name": "Joy 2",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-02.png",
     "content": [
       "Peluche (mediano) a elegir según temporada",
       "Botella mini lambrusco (elegir tinto o rosado)",
@@ -30,7 +30,7 @@
     "size": "chico",
     "name": "Joy 3",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-03.png",
     "content": [
       "Peluche (chico) a elegir según temporada",
       "Caja de chocolates ferrero (8 piezas)",
@@ -42,7 +42,7 @@
     "size": "chico",
     "name": "Joy 4",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-04.png",
     "content": [
       "Peluche(mediano) a elegir según temporada.",
       "Globo metálico sin helio",
@@ -57,7 +57,7 @@
     "size": "chico",
     "name": "Joy 5",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-05.png",
     "content": [
       "Globo burbuja confetti de 24\" con helio",
       "Vinil personalizado (solo frases cortas)",
@@ -69,7 +69,7 @@
     "size": "chico",
     "name": "Joy 6",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-06.png",
     "content": [
       "Globo burbuja pompones de 24\" con helio",
       "Vinil personalizado (solo frases cortas)",
@@ -81,7 +81,7 @@
     "size": "chico",
     "name": "Joy 7",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0kbtZTWwkAjIKDzxjcyzW7QEHCOlBGbASp5zMen3FNONcWadOnHS7I8UoWQLa2MhdH05h4aws2ceWE5sepza8K9Ea30-3Rn554PbDSDGw3-dloC5IjafibA4Ru9B1Yl6E78sEGTto4tKsaWvyeLJpMJQc3Zu5LdtmxK5o3oloAgxpD_XHEmOJT8lrgM_pZ98N7qo3q8NxC-kFn7HfS-6Wlwsk5JwEIjXNmEgnuWVKh-jCbiuq-EykJrZ4-WQUoBbcr7JcHURVpvam",
+    "img": "/src/assets/img_packages/CH-07.png",
     "content": [
       "Globo burbuja pintura de 24\" con helio",
       "Vinil personalizado (solo frases cortas)",
@@ -93,7 +93,7 @@
     "size": "mediano",
     "name": "Morning 1",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-01.png",
     "content": [
       "Caja de 25x25 con tela",
       "Media guirnalda de globos (2 colores)",
@@ -110,7 +110,7 @@
     "size": "mediano",
     "name": "Morning 2",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-02.png",
     "content": [
       "Caja de 25x25 con tela",
       "Globo metálico sin helio",
@@ -126,7 +126,7 @@
     "size": "mediano",
     "name": "Morning 3",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-03.png",
     "content": [
       "Caja de 25x25 con tela",
       "Media guirnalda de globos (2 colores)",
@@ -141,7 +141,7 @@
     "size": "mediano",
     "name": "Morning 4",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-04.png",
     "content": [
       "Caja 25x25cm",
       "Adornado con papel tornasol",
@@ -157,7 +157,7 @@
     "size": "mediano",
     "name": "Morning 5 niña",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-05-NINA.png",
     "content": [
       "Caja de 21 cm con tela",
       "Globo metálico sin helio",
@@ -171,7 +171,7 @@
     "size": "mediano",
     "name": "Morning 5 niño",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAC2lyPTsDiLQd77cFPtvGfDbPPNTqY90A2ryYrzyYvaOguAV2U7hsMyPv8Y3LjbU3B_aVKQoX0nsMw_5dclBft2GUfx_ypxho6NcDfs0oqS_tLWANnJOgR9mGQPxD7nCZowrwSJONjAbH-5zOjDLGHJv5Pr8lSfRjsYBMnY814eYk71pee9CJQcXYxjaxjaUxwKE3v8tsKQHXBgVuQSeLiEEyqql-orp_ZJHL-Fj1Yj-JdzHm0ZJuTg-59SscXZIwIH8sX8RIpgdYz",
+    "img": "/src/assets/img_packages/M-05-NINO.png",
     "content": [
       "Caja de 21 cm con tela",
       "Globo metálico sin helio",
@@ -185,7 +185,7 @@
     "size": "grande",
     "name": "Big Love 1",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK-b6YyG3Gn20lhSRlMEH-5Cd5M2YV2v0TlCmqNTQ9hU9rKNpaBbRJJvO4guTntUu8Dd5kzcc91o1iAZPuGG5Cd9Qfg2X8cCtgUcjwEiq21KFLl97iMx_E-R3-wa8Y34qD3FNCyNt23jC15YKl84yABIch7D2u2X7dBDQLG1UqvcHwf0rcJ8hd8hHEvgh-jPmt-9wEYSO17wIY9xe8AVMiYUFax3x64tAEZP73nZ6BaBBBiTyyKEqf0hSw0ghgCfRS5pMX8YizOH0R",
+    "img": "/src/assets/img_packages/G-01.png",
     "content": [
       "Caja de 40x30",
       "Globo burbuja con brillantina",
@@ -201,7 +201,7 @@
     "size": "grande",
     "name": "Big Love 2",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK-b6YyG3Gn20lhSRlMEH-5Cd5M2YV2v0TlCmqNTQ9hU9rKNpaBbRJJvO4guTntUu8Dd5kzcc91o1iAZPuGG5Cd9Qfg2X8cCtgUcjwEiq21KFLl97iMx_E-R3-wa8Y34qD3FNCyNt23jC15YKl84yABIch7D2u2X7dBDQLG1UqvcHwf0rcJ8hd8hHEvgh-jPmt-9wEYSO17wIY9xe8AVMiYUFax3x64tAEZP73nZ6BaBBBiTyyKEqf0hSw0ghgCfRS5pMX8YizOH0R",
+    "img": "/src/assets/img_packages/G-02.png",
     "content": [
       "Canasta de 35cm con guirnalda completa de globos (2 colores a elegir)",
       "Caja de chocolates lindor grandes",
@@ -218,7 +218,7 @@
     "size": "grande",
     "name": "Big Love 3",
     "price": 250,
-    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK-b6YyG3Gn20lhSRlMEH-5Cd5M2YV2v0TlCmqNTQ9hU9rKNpaBbRJJvO4guTntUu8Dd5kzcc91o1iAZPuGG5Cd9Qfg2X8cCtgUcjwEiq21KFLl97iMx_E-R3-wa8Y34qD3FNCyNt23jC15YKl84yABIch7D2u2X7dBDQLG1UqvcHwf0rcJ8hd8hHEvgh-jPmt-9wEYSO17wIY9xe8AVMiYUFax3x64tAEZP73nZ6BaBBBiTyyKEqf0hSw0ghgCfRS5pMX8YizOH0R",
+    "img": "/src/assets/img_packages/G-03.png",
     "content": [
       "Canasta de madera con tela",
       "Guirnalda de globos (2 colores a elegir)",

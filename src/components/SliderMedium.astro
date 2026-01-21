@@ -2,10 +2,15 @@
 import { Picture } from "astro:assets";
 import productsData from "../data/paquetes.json";
 
-const mediumPacks = productsData.filter((item) => item.size == "mediano");
-
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+const mediumPacks = productsData.filter((item) => item.size == "mediano");
+
+// 1. Cargamos todas las imágenes de la carpeta de forma dinámica
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/img_packages/*.{jpeg,jpg,png,gif}",
+);
 ---
 
 <section>
@@ -26,14 +31,11 @@ import "swiper/css/pagination";
               <div class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border-2 border-gold/30 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300">
                 <div class="aspect-square xl:aspect-video w-full overflow-hidden bg-gray-100">
                   <Picture
-                    src={{
-                      src: el.img,
-                      format: "png",
-                      width: 800,
-                      height: 800,
-                    }}
+                    src={images[el.img]()}
                     alt={"media"}
                     formats={["webp", "png"]}
+                    widths={[400, 800]}
+                    sizes="(max-width: 800px) 100vw, 800px"
                     class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>

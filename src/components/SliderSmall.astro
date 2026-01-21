@@ -25,11 +25,7 @@ import "swiper/css/pagination";
         smallPacks.map((el) => {
           return (
             <div class="swiper-slide !h-auto">
-              <a
-                class="group relative flex flex-col h-full overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm hover:shadow-pop transition-all border border-gray-100 dark:border-gray-700"
-                href={`https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20${el.name}%20de%20la%20categoría%20JOY%20DROPS.`}
-                target="_blank"
-              >
+              <div class="group relative flex flex-col h-full overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm hover:shadow-pop transition-all border border-gray-100 dark:border-gray-700">
                 <div class="aspect-square w-full overflow-hidden bg-gray-200">
                   <img
                     alt="media"
@@ -57,14 +53,19 @@ import "swiper/css/pagination";
                   <p class="mb-4 text-sm font-semibold text-gray-500 dark:text-gray-400">
                     ${el.price} MXN
                   </p>
-                  <div class="mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-whatsapp py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-whatsapp-hover">
+                  <button
+                    data-item-id={el.id}
+                    data-item-name={el.name}
+                    data-item-image={el.img}
+                    class="add-to-cart cursor-pointer mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-whatsapp py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-whatsapp-hover"
+                  >
                     <span class="material-symbols-outlined text-[18px]">
                       chat
                     </span>
                     LO QUIERO
-                  </div>
+                  </button>
                 </div>
-              </a>
+              </div>
             </div>
           );
         })
@@ -78,6 +79,7 @@ import "swiper/css/pagination";
 <script>
   import Swiper from "swiper";
   import { Pagination, Navigation, Autoplay } from "swiper/modules";
+  import { addCartItem, isCartOpen } from "../atoms/cardStore";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Joy Drops Swiper
@@ -107,6 +109,35 @@ import "swiper/css/pagination";
           spaceBetween: 20,
         },
       },
+    });
+  });
+
+  // Agregar event listeners a los botones
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const btn = e.currentTarget as HTMLButtonElement;
+      const itemId = btn.dataset.itemId;
+      const itemName = btn.dataset.itemName;
+      const itemImage = btn.dataset.itemImage;
+
+      if (itemId && itemName && itemImage) {
+        addCartItem({
+          id: itemId,
+          name: itemName,
+          imageSrc: itemImage,
+        });
+
+        // Opcional: Abrir el carrito automáticamente
+        isCartOpen.set(true);
+
+        // Opcional: Feedback visual
+        btn.textContent = "¡AGREGADO!";
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">chat</span> LO QUIERO`;
+        }, 1000);
+      }
     });
   });
 </script>

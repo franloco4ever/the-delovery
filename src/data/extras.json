@@ -1,50 +1,211 @@
 {
   "productos_extra": [
-    { "name": "Globo metálico standar con aire", "price": 100 },
-    { "name": "Globo metálico estándar con helio", "price": 100 },
-    { "name": "Burbuja con texto personalizado y aire", "price": 100 },
-    { "name": "Burbuja con texto personalizado y helio 18\"", "price": 100 },
-    { "name": "Burbuja con texto personalizado y helio 24\"", "price": 100 },
-    { "name": "Pastel individual con texto personalizado 1", "price": 100 },
-    { "name": "Pastel individual con texto personalizado 2", "price": 100 },
-    { "name": "Pastel individual con texto personalizado 3", "price": 100 },
-    { "name": "Peluche chico de temporada", "price": 100 },
-    { "name": "Pelucha mediano de temporada", "price": 100 },
-    { "name": "Peluche grande de temporada", "price": 100 },
-    { "name": "Chocolate lindor bolsa chica", "price": 100 },
-    { "name": "Chocolate lindor caja", "price": 100 },
-    { "name": "Chocolate ferrero 4 pzas", "price": 100 },
-    { "name": "Chocolate ferrero mediana", "price": 100 },
-    { "name": "Chocolate ferrero grande", "price": 100 },
-    { "name": "Nutella 200 gr", "price": 100 },
-    { "name": "Chocolate baileys", "price": 100 },
-    { "name": "Kisses almendras 123gr", "price": 100 },
-    { "name": "Kisses cerezas 120gr", "price": 100 },
-    { "name": "Hersheys coffe creation 94.5gr", "price": 100 },
-    { "name": "Un par de rosas con follaje (según temporada)", "price": 100 },
     {
+      "id": "extra_1",
+      "img": "",
+      "name": "Globo metálico standar con aire",
+      "price": 100
+    },
+    {
+      "id": "extra_2",
+      "img": "",
+      "name": "Globo metálico estándar con helio",
+      "price": 100
+    },
+    {
+      "id": "extra_3",
+      "img": "",
+      "name": "Burbuja con texto personalizado y aire",
+      "price": 100
+    },
+    {
+      "id": "extra_4",
+      "img": "",
+      "name": "Burbuja con texto personalizado y helio 18\"",
+      "price": 100
+    },
+    {
+      "id": "extra_5",
+      "img": "",
+      "name": "Burbuja con texto personalizado y helio 24\"",
+      "price": 100
+    },
+    {
+      "id": "extra_6",
+      "img": "",
+      "name": "Pastel individual con texto personalizado 1",
+      "price": 100
+    },
+    {
+      "id": "extra_7",
+      "img": "",
+      "name": "Pastel individual con texto personalizado 2",
+      "price": 100
+    },
+    {
+      "id": "extra_8",
+      "img": "",
+      "name": "Pastel individual con texto personalizado 3",
+      "price": 100
+    },
+    {
+      "id": "extra_9",
+      "img": "",
+      "name": "Peluche chico de temporada",
+      "price": 100
+    },
+    {
+      "id": "extra_10",
+      "img": "",
+      "name": "Pelucha mediano de temporada",
+      "price": 100
+    },
+    {
+      "id": "extra_11",
+      "img": "",
+      "name": "Peluche grande de temporada",
+      "price": 100
+    },
+    {
+      "id": "extra_12",
+      "img": "",
+      "name": "Chocolate lindor bolsa chica",
+      "price": 100
+    },
+    {
+      "id": "extra_13",
+      "img": "",
+      "name": "Chocolate lindor caja",
+      "price": 100
+    },
+    {
+      "id": "extra_14",
+      "img": "",
+      "name": "Chocolate ferrero 4 pzas",
+      "price": 100
+    },
+    {
+      "id": "extra_15",
+      "img": "",
+      "name": "Chocolate ferrero mediana",
+      "price": 100
+    },
+    {
+      "id": "extra_16",
+      "img": "",
+      "name": "Chocolate ferrero grande",
+      "price": 100
+    },
+    { "id": "extra_17", "img": "", "name": "Nutella 200 gr", "price": 100 },
+    { "id": "extra_18", "img": "", "name": "Chocolate baileys", "price": 100 },
+    {
+      "id": "extra_19",
+      "img": "",
+      "name": "Kisses almendras 123gr",
+      "price": 100
+    },
+    {
+      "id": "extra_20",
+      "img": "",
+      "name": "Kisses cerezas 120gr",
+      "price": 100
+    },
+    {
+      "id": "extra_21",
+      "img": "",
+      "name": "Hersheys coffe creation 94.5gr",
+      "price": 100
+    },
+    {
+      "id": "extra_22",
+      "img": "",
+      "name": "Un par de rosas con follaje (según temporada)",
+      "price": 100
+    },
+    {
+      "id": "extra_23",
+      "img": "",
       "name": "Arreglo pequeño de flores mixtas (gerberas y pequeñas con follaje)",
       "price": 100
     },
     {
+      "id": "extra_24",
+      "img": "",
       "name": "Arreglo grande de flores mixtas (gerberas y pequeñas con follaje)",
       "price": 100
     },
-    { "name": "Mini botella de vino tinto", "price": 100 },
-    { "name": "Mini botella de vino rosado", "price": 100 },
-    { "name": "Vino lambrusco, Concha y Toro, Finca las moras", "price": 100 },
-    { "name": "Vino Finca las moras", "price": 100 },
-    { "name": "Vino 4 soles", "price": 100 },
-    { "name": "Cerveza modelo cristal", "price": 100 },
-    { "name": "Cerveza heineken cristal", "price": 100 },
-    { "name": "Cerveza high miller cristal", "price": 100 },
-    { "name": "Cerveza corona cristal", "price": 100 },
-    { "name": "Portarretrato con foto 4x6 in / 15 x 20 cm", "price": 100 },
     {
+      "id": "extra_25",
+      "img": "",
+      "name": "Mini botella de vino tinto",
+      "price": 100
+    },
+    {
+      "id": "extra_26",
+      "img": "",
+      "name": "Mini botella de vino rosado",
+      "price": 100
+    },
+    {
+      "id": "extra_27",
+      "img": "",
+      "name": "Vino lambrusco, Concha y Toro, Finca las moras",
+      "price": 100
+    },
+    {
+      "id": "extra_28",
+      "img": "",
+      "name": "Vino Finca las moras",
+      "price": 100
+    },
+    { "id": "extra_29", "img": "", "name": "Vino 4 soles", "price": 100 },
+    {
+      "id": "extra_30",
+      "img": "",
+      "name": "Cerveza modelo cristal",
+      "price": 100
+    },
+    {
+      "id": "extra_31",
+      "img": "",
+      "name": "Cerveza heineken cristal",
+      "price": 100
+    },
+    {
+      "id": "extra_32",
+      "img": "",
+      "name": "Cerveza high miller cristal",
+      "price": 100
+    },
+    {
+      "id": "extra_33",
+      "img": "",
+      "name": "Cerveza corona cristal",
+      "price": 100
+    },
+    {
+      "id": "extra_34",
+      "img": "",
+      "name": "Portarretrato con foto 4x6 in / 15 x 20 cm",
+      "price": 100
+    },
+    {
+      "id": "extra_35",
+      "img": "",
       "name": "Termo con vinil personalizado (colores disponibles)",
       "price": 100
     },
-    { "name": "Ramo de rosas (12 pzas)", "price": 100 },
-    { "name": "Ramo de rosas (24 pzas)", "price": 100 }
+    {
+      "id": "extra_36",
+      "img": "",
+      "name": "Ramo de rosas (12 pzas)",
+      "price": 100
+    },
+    {
+      "id": "extra_37",
+      "img": "",
+      "name": "Ramo de rosas (24 pzas)",
+      "price": 100
+    }
   ]
 }

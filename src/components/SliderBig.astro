@@ -5,11 +5,21 @@ import productsData from "../data/paquetes.json";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const bigPacks = productsData.filter((item) => item.size == "grande");
+// const bigPacks = productsData.filter((item) => item.size == "grande");
 
 // 1. Cargamos todas las imágenes de la carpeta de forma dinámica
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/img_packages/*.{jpeg,jpg,png,gif}",
+);
+
+// IMPORTANTE: Convertimos el map en una serie de promesas para resolver las imágenes
+const bigPacksWithImages = await Promise.all(
+  productsData
+    .filter((item) => item.size == "grande")
+    .map(async (item) => {
+      const imageModule = await images[item.img]();
+      return { ...item, imageResolved: imageModule.default };
+    }),
 );
 ---
 
@@ -25,14 +35,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <div class="swiper loveSwiper pb-12! px-2!">
     <div class="swiper-wrapper">
       {
-        bigPacks.map((el) => {
+        bigPacksWithImages.map((el) => {
           return (
             <div class="swiper-slide">
               <div class="block group relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-surface-light dark:bg-surface-dark p-1 shadow-gold hover:shadow-pop-hover transition-all">
                 <div class="grid md:grid-cols-2">
                   <div class="relative h-64 md:h-auto overflow-hidden rounded-xl md:rounded-r-none">
                     <Picture
-                      src={images[el.img]()}
+                      src={el.imageResolved}
                       alt={"media"}
                       formats={["webp", "png"]}
                       widths={[400, 800]}

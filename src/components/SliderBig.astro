@@ -84,7 +84,7 @@ const bigPacksWithImages = await Promise.all(
                       <button
                         data-item-id={el.id}
                         data-item-name={el.name}
-                        data-item-image={el.img}
+                        data-item-image={el.imageResolved.src}
                         data-item-price={el.price}
                         class="add-to-cart cursor-pointer flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-whatsapp px-8 py-3 text-base font-bold text-white shadow-lg transition-transform group-hover:-translate-y-1 group-hover:shadow-xl group-hover:bg-whatsapp-hover"
                       >

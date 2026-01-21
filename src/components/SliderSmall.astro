@@ -78,7 +78,7 @@ const smallPacksWithImages = await Promise.all(
                   <button
                     data-item-id={el.id}
                     data-item-name={el.name}
-                    data-item-image={el.img}
+                    data-item-image={el.imageResolved.src}
                     data-item-price={el.price}
                     class="add-to-cart cursor-pointer mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-whatsapp py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-whatsapp-hover"
                   >

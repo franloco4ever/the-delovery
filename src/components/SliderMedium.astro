@@ -22,11 +22,7 @@ import "swiper/css/pagination";
         mediumPacks.map((el) => {
           return (
             <div class="swiper-slide !h-auto">
-              <a
-                class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300"
-                href={`https://wa.me/523300000000?text=Hola!%20Me%20interesa%20el%20paquete%20${el.name}%20Pack%20de%20la%20categoría%20MORNING%20VIBES.`}
-                target="_blank"
-              >
+              <div class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300">
                 <div class="h-48 w-full overflow-hidden bg-gray-100">
                   <img
                     alt="Full breakfast spread with bagel, juice, and fruit"
@@ -64,15 +60,21 @@ import "swiper/css/pagination";
                     <span class="text-xl font-bold text-[#1d0c0e] dark:text-white">
                       ${el.price} MXN
                     </span>
-                    <div class="flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover">
+                    <button
+                      data-item-id={el.id}
+                      data-item-name={el.name}
+                      data-item-image={el.img}
+                      data-item-price={el.price}
+                      class="add-to-cart cursor-pointer flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover"
+                    >
                       <span class="material-symbols-outlined text-[18px]">
                         chat
                       </span>
                       LO QUIERO
-                    </div>
+                    </button>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           );
         })
@@ -86,6 +88,7 @@ import "swiper/css/pagination";
 <script>
   import Swiper from "swiper";
   import { Pagination, Navigation, Autoplay } from "swiper/modules";
+  import { addCartItem, isCartOpen } from "../atoms/cardStore";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Morning Vibes Swiper
@@ -107,6 +110,37 @@ import "swiper/css/pagination";
           spaceBetween: 24,
         },
       },
+    });
+  });
+
+  // Agregar event listeners a los botones
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const btn = e.currentTarget as HTMLButtonElement;
+      const itemId = btn.dataset.itemId;
+      const itemName = btn.dataset.itemName;
+      const itemImage = btn.dataset.itemImage;
+      const itemPrice = parseFloat(btn.dataset.itemPrice || "0");
+
+      if (itemId && itemName && itemImage) {
+        addCartItem({
+          id: itemId,
+          name: itemName,
+          imageSrc: itemImage,
+          price: itemPrice,
+        });
+
+        // Opcional: Abrir el carrito automáticamente
+        isCartOpen.set(true);
+
+        // Opcional: Feedback visual
+        btn.textContent = "¡AGREGADO!";
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">chat</span> LO QUIERO`;
+        }, 1000);
+      }
     });
   });
 </script>

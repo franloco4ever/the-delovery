@@ -1,5 +1,6 @@
 [
   {
+    "id": "chico_1",
     "size": "chico",
     "name": "Joy 1",
     "price": 250,
@@ -12,6 +13,7 @@
     ]
   },
   {
+    "id": "chico_2",
     "size": "chico",
     "name": "Joy 2",
     "price": 250,
@@ -24,6 +26,7 @@
     ]
   },
   {
+    "id": "chico_3",
     "size": "chico",
     "name": "Joy 3",
     "price": 250,
@@ -35,6 +38,7 @@
     ]
   },
   {
+    "id": "chico_4",
     "size": "chico",
     "name": "Joy 4",
     "price": 250,
@@ -49,6 +53,7 @@
     ]
   },
   {
+    "id": "chico_5",
     "size": "chico",
     "name": "Joy 5",
     "price": 250,
@@ -60,6 +65,7 @@
     ]
   },
   {
+    "id": "chico_6",
     "size": "chico",
     "name": "Joy 6",
     "price": 250,
@@ -71,6 +77,7 @@
     ]
   },
   {
+    "id": "chico_7",
     "size": "chico",
     "name": "Joy 7",
     "price": 250,
@@ -82,6 +89,7 @@
     ]
   },
   {
+    "id": "mediano_1",
     "size": "mediano",
     "name": "Morning 1",
     "price": 250,
@@ -98,6 +106,7 @@
     ]
   },
   {
+    "id": "mediano_2",
     "size": "mediano",
     "name": "Morning 2",
     "price": 250,
@@ -113,6 +122,7 @@
     ]
   },
   {
+    "id": "mediano_3",
     "size": "mediano",
     "name": "Morning 3",
     "price": 250,
@@ -127,6 +137,7 @@
     ]
   },
   {
+    "id": "mediano_4",
     "size": "mediano",
     "name": "Morning 4",
     "price": 250,
@@ -142,6 +153,7 @@
     ]
   },
   {
+    "id": "mediano_5_nina",
     "size": "mediano",
     "name": "Morning 5 niña",
     "price": 250,
@@ -155,6 +167,7 @@
     ]
   },
   {
+    "id": "mediano_5_nino",
     "size": "mediano",
     "name": "Morning 5 niño",
     "price": 250,
@@ -168,6 +181,7 @@
     ]
   },
   {
+    "id": "grande_1",
     "size": "grande",
     "name": "Big Love 1",
     "price": 250,
@@ -183,6 +197,7 @@
     ]
   },
   {
+    "id": "grande_2",
     "size": "grande",
     "name": "Big Love 2",
     "price": 250,
@@ -199,6 +214,7 @@
     ]
   },
   {
+    "id": "grande_3",
     "size": "grande",
     "name": "Big Love 3",
     "price": 250,

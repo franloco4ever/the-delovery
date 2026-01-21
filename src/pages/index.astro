@@ -1,5 +1,6 @@
 ---
 import ExtraItems from "../components/ExtraItems.astro";
+import ShoppingCart from "../components/Shopingcart";
 import SliderBig from "../components/SliderBig.astro";
 import SliderMedium from "../components/SliderMedium.astro";
 import SliderSmall from "../components/SliderSmall.astro";
@@ -45,15 +46,13 @@ import "swiper/css";
             THE DELOVERY
           </h1>
         </div>
-        <a
+        <button
+          id="shopping_cart_btn"
           class="flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-white transition-transform hover:scale-105 hover:bg-primary-hover active:scale-95 cursor-pointer"
-          href="#menu"
         >
-          <span class="hidden sm:inline">Pedir Ahora</span>
-          <span class="sm:hidden">Menú</span>
-          <span class="material-symbols-outlined text-base">arrow_downward</span
-          >
-        </a>
+          <span class="">Carrito</span>
+          <span class="material-symbols-outlined text-base">shopping_cart</span>
+        </button>
       </div>
     </nav>
     <main class="flex flex-col items-center w-full">
@@ -182,6 +181,7 @@ import "swiper/css";
           </div>
         </section>
       </div>
+
       <footer
         class="mt-auto w-full border-t border-[#f4e6e7] dark:border-gray-800 bg-white dark:bg-[#1f282e] py-10"
       >
@@ -236,6 +236,17 @@ import "swiper/css";
           >
         </div>
       </footer>
+      <ShoppingCart client:only="react" />
+      <script>
+        import { isCartOpen } from "../atoms/cardStore";
+
+        const shopping_cart_btn = document.querySelector(
+          "#shopping_cart_btn",
+        ) as HTMLButtonElement;
+        shopping_cart_btn.addEventListener("click", () => {
+          isCartOpen.set(!isCartOpen.get());
+        });
+      </script>
     </main>
   </body>
 </html>

@@ -10,7 +10,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/img_packages/*.{jpeg,jpg,png,gif}",
 );
 
-const smallPacks = productsData.filter((item) => item.size == "chico");
+// const smallPacks = productsData.filter((item) => item.size == "chico");
+
+// IMPORTANTE: Convertimos el map en una serie de promesas para resolver las imágenes
+const smallPacksWithImages = await Promise.all(
+  productsData
+    .filter((item) => item.size == "chico")
+    .map(async (item) => {
+      const imageModule = await images[item.img]();
+      return { ...item, imageResolved: imageModule.default };
+    }),
+);
 ---
 
 <section>
@@ -28,13 +38,13 @@ const smallPacks = productsData.filter((item) => item.size == "chico");
   <div class="swiper joySwiper !pb-12 !px-1">
     <div class="swiper-wrapper !h-auto">
       {
-        smallPacks.map((el, i) => {
+        smallPacksWithImages.map((el, i) => {
           return (
             <div class="swiper-slide !h-auto">
               <div class="group relative flex flex-col h-full overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm hover:shadow-pop transition-all border-2 border-gold/30 dark:border-gray-700">
                 <div class="aspect-square w-full overflow-hidden bg-gray-200">
                   <Picture
-                    src={images[el.img]()}
+                    src={el.imageResolved}
                     alt={"media"}
                     formats={["webp", "png"]}
                     widths={[400, 800]}
@@ -68,7 +78,7 @@ const smallPacks = productsData.filter((item) => item.size == "chico");
                   <button
                     data-item-id={el.id}
                     data-item-name={el.name}
-                    data-item-image={el.img}
+                    data-item-image={el.imageResolved.src}
                     data-item-price={el.price}
                     class="add-to-cart cursor-pointer mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-whatsapp py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-whatsapp-hover"
                   >

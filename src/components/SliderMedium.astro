@@ -11,6 +11,16 @@ const mediumPacks = productsData.filter((item) => item.size == "mediano");
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/img_packages/*.{jpeg,jpg,png,gif}",
 );
+
+// IMPORTANTE: Convertimos el map en una serie de promesas para resolver las imágenes
+const mediumPacksWithImages = await Promise.all(
+  productsData
+    .filter((item) => item.size == "mediano")
+    .map(async (item) => {
+      const imageModule = await images[item.img]();
+      return { ...item, imageResolved: imageModule.default };
+    }),
+);
 ---
 
 <section>
@@ -25,13 +35,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <div class="swiper morningSwiper !pb-12 !px-1">
     <div class="swiper-wrapper">
       {
-        mediumPacks.map((el) => {
+        mediumPacksWithImages.map((el) => {
           return (
             <div class="swiper-slide !h-auto">
               <div class="group flex flex-col h-full overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-md border-2 border-gold/30 dark:border-gray-700 hover:shadow-pop-hover transition-all duration-300">
                 <div class="aspect-square xl:aspect-video w-full overflow-hidden bg-gray-100">
                   <Picture
-                    src={images[el.img]()}
+                    src={el.imageResolved}
                     alt={"media"}
                     formats={["webp", "png"]}
                     widths={[400, 800]}
@@ -75,7 +85,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
                     <button
                       data-item-id={el.id}
                       data-item-name={el.name}
-                      data-item-image={el.img}
+                      data-item-image={el.imageResolved.src}
                       data-item-price={el.price}
                       class="add-to-cart cursor-pointer flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover"
                     >

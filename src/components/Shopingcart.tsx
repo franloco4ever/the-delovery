@@ -1,7 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { useState, useEffect } from "react";
 
-// Simulación del store (reemplaza con tu import real)
 import {
   cartItems,
   isCartOpen,
@@ -10,14 +9,6 @@ import {
   getCartTotal,
   type CartItem,
 } from "../atoms/cardStore";
-
-// export type CartItem = {
-//   id: string;
-//   name: string;
-//   imageSrc: string;
-//   quantity: number;
-//   price: number
-// };
 
 export default function ShoppingCart() {
   const $isCartOpen = useStore(isCartOpen);

@@ -6,15 +6,16 @@ export type CartItem = {
   name: string;
   imageSrc: string;
   quantity: number;
+  price: number;
 };
-type ItemDisplayInfo = Pick<CartItem, "id" | "name" | "imageSrc">;
+type ItemDisplayInfo = Pick<CartItem, "id" | "name" | "imageSrc" | "price">;
 
 //ATOMS
 export const isCartOpen = atom(false);
 export const cartItems = map<Record<string, CartItem>>({});
 
 //FUNCTIONS
-export function addCartItem({ id, name, imageSrc }: ItemDisplayInfo) {
+export function addCartItem({ id, name, imageSrc, price }: ItemDisplayInfo) {
   const existingEntry = cartItems.get()[id];
   if (existingEntry) {
     cartItems.setKey(id, {
@@ -22,10 +23,10 @@ export function addCartItem({ id, name, imageSrc }: ItemDisplayInfo) {
       quantity: existingEntry.quantity + 1,
     });
   } else {
-    cartItems.setKey(id, { id, name, imageSrc, quantity: 1 });
+    cartItems.setKey(id, { id, name, imageSrc, price, quantity: 1 });
   }
 
-  console.table(cartItems);
+  console.table(cartItems.get());
 }
 
 export function removeCartItem(id: string) {
@@ -43,4 +44,18 @@ export function updateQuantity(id: string, quantity: number) {
       cartItems.setKey(id, { ...existingEntry, quantity });
     }
   }
+}
+
+export function getCartTotal(): number {
+  const items = Object.values(cartItems.get());
+  return items.reduce((total, item) => total + item.price * item.quantity, 0);
+}
+
+export function getCartItemCount(): number {
+  const items = Object.values(cartItems.get());
+  return items.reduce((count, item) => count + item.quantity, 0);
+}
+
+export function clearCart(): void {
+  cartItems.set({});
 }

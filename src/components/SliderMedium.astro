@@ -64,6 +64,7 @@ import "swiper/css/pagination";
                       data-item-id={el.id}
                       data-item-name={el.name}
                       data-item-image={el.img}
+                      data-item-price={el.price}
                       class="add-to-cart cursor-pointer flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-2.5 text-sm font-bold text-white transition-transform group-hover:scale-105 group-hover:bg-whatsapp-hover"
                     >
                       <span class="material-symbols-outlined text-[18px]">
@@ -121,12 +122,14 @@ import "swiper/css/pagination";
       const itemId = btn.dataset.itemId;
       const itemName = btn.dataset.itemName;
       const itemImage = btn.dataset.itemImage;
+      const itemPrice = parseFloat(btn.dataset.itemPrice || "0");
 
       if (itemId && itemName && itemImage) {
         addCartItem({
           id: itemId,
           name: itemName,
           imageSrc: itemImage,
+          price: itemPrice,
         });
 
         // Opcional: Abrir el carrito automáticamente

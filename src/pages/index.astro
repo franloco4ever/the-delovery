@@ -1,4 +1,5 @@
 ---
+import ExtraItems from "../components/ExtraItems.astro";
 import SliderBig from "../components/SliderBig.astro";
 import SliderMedium from "../components/SliderMedium.astro";
 import SliderSmall from "../components/SliderSmall.astro";
@@ -123,81 +124,7 @@ import "swiper/css";
         <SliderMedium />
         <SliderBig />
 
-        <section class="w-full py-4">
-          <h4 class="mb-4 px-4 text-lg font-bold text-gray-900 dark:text-white">
-            ✨ Agrega un extra
-          </h4>
-          <div
-            class="scrollbar-hide flex snap-x gap-4 overflow-x-auto px-4 pb-4"
-          >
-            <div class="snap-start shrink-0">
-              <div
-                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
-              >
-                <div
-                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
-                >
-                  🎈
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-900 dark:text-white">
-                    Globos
-                  </p>
-                  <p class="text-xs text-gray-500">+$150</p>
-                </div>
-                <div
-                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
-                >
-                  <span class="material-symbols-outlined text-sm">add</span>
-                </div>
-              </div>
-            </div>
-            <div class="snap-start shrink-0">
-              <div
-                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
-              >
-                <div
-                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
-                >
-                  💐
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-900 dark:text-white">
-                    Flores Extra
-                  </p>
-                  <p class="text-xs text-gray-500">+$300</p>
-                </div>
-                <div
-                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
-                >
-                  <span class="material-symbols-outlined text-sm">add</span>
-                </div>
-              </div>
-            </div>
-            <div class="snap-start shrink-0">
-              <div
-                class="flex w-40 flex-col items-center gap-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 p-3 text-center transition-colors hover:border-primary hover:bg-primary/5 cursor-pointer group"
-              >
-                <div
-                  class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm text-2xl group-hover:scale-110 transition-transform"
-                >
-                  📸
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-900 dark:text-white">
-                    Polaroid
-                  </p>
-                  <p class="text-xs text-gray-500">+$50</p>
-                </div>
-                <div
-                  class="mt-1 h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 group-hover:bg-primary group-hover:text-white transition-colors"
-                >
-                  <span class="material-symbols-outlined text-sm">add</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ExtraItems />
         <section
           class="rounded-3xl bg-white dark:bg-[#252b36] p-8 sm:p-12 shadow-sm"
         >

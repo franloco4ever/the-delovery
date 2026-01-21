@@ -2,6 +2,9 @@
 import productsData from "../data/paquetes.json";
 
 const bigPacks = productsData.filter((item) => item.size == "grande");
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 ---
 
 <section>
@@ -74,6 +77,8 @@ const bigPacks = productsData.filter((item) => item.size == "grande");
       }
     </div>
     <div class="swiper-pagination"></div>
+    <div class="swiper-button-next hidden sm:flex"></div>
+    <div class="swiper-button-prev hidden sm:flex"></div>
   </div>
 </section>
 <script>

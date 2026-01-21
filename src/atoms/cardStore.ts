@@ -27,3 +27,20 @@ export function addCartItem({ id, name, imageSrc }: ItemDisplayInfo) {
 
   console.table(cartItems);
 }
+
+export function removeCartItem(id: string) {
+  const items = { ...cartItems.get() };
+  delete items[id];
+  cartItems.set(items);
+}
+
+export function updateQuantity(id: string, quantity: number) {
+  if (quantity <= 0) {
+    removeCartItem(id);
+  } else {
+    const existingEntry = cartItems.get()[id];
+    if (existingEntry) {
+      cartItems.setKey(id, { ...existingEntry, quantity });
+    }
+  }
+}

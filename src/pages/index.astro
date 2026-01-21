@@ -1,5 +1,6 @@
 ---
 import ExtraItems from "../components/ExtraItems.astro";
+import ShoppingCart from "../components/Shopingcart";
 import SliderBig from "../components/SliderBig.astro";
 import SliderMedium from "../components/SliderMedium.astro";
 import SliderSmall from "../components/SliderSmall.astro";
@@ -182,6 +183,7 @@ import "swiper/css";
           </div>
         </section>
       </div>
+
       <footer
         class="mt-auto w-full border-t border-[#f4e6e7] dark:border-gray-800 bg-white dark:bg-[#1f282e] py-10"
       >
@@ -236,6 +238,8 @@ import "swiper/css";
           >
         </div>
       </footer>
+
+      <ShoppingCart client:only="react" />
     </main>
   </body>
 </html>

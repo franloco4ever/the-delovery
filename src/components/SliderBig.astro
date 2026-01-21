@@ -1,4 +1,5 @@
 ---
+import { Picture } from "astro:assets";
 import productsData from "../data/paquetes.json";
 
 const bigPacks = productsData.filter((item) => item.size == "grande");
@@ -16,7 +17,7 @@ import "swiper/css/pagination";
     </h3>
     <p class="text-gold font-medium">Para cuando sobran las palabras.</p>
   </div>
-  <div class="swiper loveSwiper !pb-12 !px-1">
+  <div class="swiper loveSwiper pb-12! px-2!">
     <div class="swiper-wrapper">
       {
         bigPacks.map((el) => {
@@ -25,10 +26,16 @@ import "swiper/css/pagination";
               <div class="block group relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-surface-light dark:bg-surface-dark p-1 shadow-gold hover:shadow-pop-hover transition-all">
                 <div class="grid md:grid-cols-2">
                   <div class="relative h-64 md:h-auto overflow-hidden rounded-xl md:rounded-r-none">
-                    <img
-                      alt="Luxurious gift set with flowers and champagne"
+                    <Picture
+                      src={{
+                        src: el.img,
+                        format: "png",
+                        width: 800,
+                        height: 800,
+                      }}
+                      alt={"media"}
+                      formats={["webp", "png"]}
                       class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      src={el.img}
                     />
                     <div class="absolute top-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                       Premium
@@ -57,7 +64,10 @@ import "swiper/css/pagination";
                     </ul>
                     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                       <span class="text-3xl font-black text-[#1d0c0e] dark:text-white">
-                        ${el.price}
+                        {el.price.toLocaleString("es-MX", {
+                          currency: "MXN",
+                          style: "currency",
+                        })}
                       </span>
                       <button
                         data-item-id={el.id}
@@ -92,7 +102,7 @@ import "swiper/css/pagination";
     new Swiper(".loveSwiper", {
       modules: [Pagination, Navigation],
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 40,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

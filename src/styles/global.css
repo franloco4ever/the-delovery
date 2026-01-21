@@ -39,6 +39,7 @@
 }
 :root {
   --swiper-theme-color: #ff4757;
+  --swiper-pagination-color: #ff4757;
   --swiper-pagination-bullet-inactive-color: #cbd5e1;
   --swiper-pagination-bullet-inactive-opacity: 1;
 }

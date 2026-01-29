@@ -45,25 +45,15 @@ import "swiper/css";
     />
   </head>
   <body
-    class="bg-background-light dark:bg-background-dark font-display text-[#1d0c0e] dark:text-gray-100 antialiased selection:bg-primary selection:text-white"
+    class="bg-background-light font-display text-[#1d0c0e] antialiased selection:bg-primary selection:text-white"
   >
     <nav
-      class="sticky top-0 z-50 w-full border-b border-[#f4e6e7] dark:border-gray-800 bg-[#fcf8f8]/90 dark:bg-[#1f282e]/90 backdrop-blur-md"
+      class="sticky top-0 z-50 w-full border-b border-[#f4e6e7] bg-[#fcf8f8]/90 backdrop-blur-md"
     >
       <div
         class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
       >
         <div class="flex items-center gap-2">
-          <!-- <div
-            class="flex size-8 items-center justify-center rounded-full bg-primary text-white"
-          >
-            <span class="material-symbols-outlined text-xl">redeem</span>
-          </div>
-          <h1
-            class="text-xl font-extrabold tracking-tight text-[#1d0c0e] dark:text-white"
-          >
-            THE DELOVERY
-          </h1> -->
           <img src="/logo_hor.svg" alt="logo_hor" width="142" height="52" />
         </div>
         <button
@@ -76,6 +66,9 @@ import "swiper/css";
       </div>
     </nav>
     <main class="flex flex-col items-center w-full">
+      <h1 class="hidden">
+        Desayunos y regalos sorpresa en Guadalajara y Zapopan | The Delovery
+      </h1>
       <section class="w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div
           class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-900 shadow-xl"
@@ -144,12 +137,8 @@ import "swiper/css";
         <SliderBig />
 
         <ExtraItems />
-        <section
-          class="rounded-3xl bg-white dark:bg-[#252b36] p-8 sm:p-12 shadow-sm"
-        >
-          <h3
-            class="mb-10 text-center text-2xl font-bold text-[#1d0c0e] dark:text-white"
-          >
+        <section class="rounded-3xl bg-white p-8 sm:p-12 shadow-sm">
+          <h3 class="mb-10 text-center text-2xl font-bold text-[#1d0c0e]">
             ¿Cómo funciona?
           </h3>
           <div class="grid gap-8 sm:grid-cols-3">
@@ -160,10 +149,8 @@ import "swiper/css";
                 <span class="material-symbols-outlined text-3xl">touch_app</span
                 >
               </div>
-              <h4 class="mb-2 text-lg font-bold dark:text-white">
-                1. Elige tu sorpresa
-              </h4>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <h4 class="mb-2 text-lg font-bold">1. Elige tu sorpresa</h4>
+              <p class="text-sm text-gray-500">
                 Navega por nuestro menú y selecciona el paquete perfecto para la
                 ocasión.
               </p>
@@ -174,10 +161,8 @@ import "swiper/css";
               >
                 <span class="material-symbols-outlined text-3xl">chat</span>
               </div>
-              <h4 class="mb-2 text-lg font-bold dark:text-white">
-                2. Confirma en WhatsApp
-              </h4>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <h4 class="mb-2 text-lg font-bold">2. Confirma en WhatsApp</h4>
+              <p class="text-sm text-gray-500">
                 Al dar click, hablarás directo con nosotros para personalizar
                 detalles y pagar.
               </p>
@@ -190,10 +175,8 @@ import "swiper/css";
                   >local_shipping</span
                 >
               </div>
-              <h4 class="mb-2 text-lg font-bold dark:text-white">
-                3. Recibe y Disfruta
-              </h4>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <h4 class="mb-2 text-lg font-bold">3. Recibe y Disfruta</h4>
+              <p class="text-sm text-gray-500">
                 Entregamos en la puerta de tu casa u oficina en el horario
                 acordado.
               </p>
@@ -202,9 +185,7 @@ import "swiper/css";
         </section>
       </div>
 
-      <footer
-        class="mt-auto w-full border-t border-[#f4e6e7] dark:border-gray-800 bg-white dark:bg-[#1f282e] py-10"
-      >
+      <footer class="mt-auto w-full border-t border-[#f4e6e7] bg-white py-10">
         <div
           class="mx-auto flex max-w-5xl flex-col gap-8 px-6 text-center sm:text-left sm:flex-row sm:justify-between"
         >
@@ -220,18 +201,12 @@ import "swiper/css";
                 class="w-[120px] h-auto"
               />
             </div>
-            <p
-              class="max-w-xs text-sm text-gray-500 dark:text-gray-400 mx-auto sm:mx-0"
-            >
+            <p class="max-w-xs text-sm text-gray-500 mx-auto sm:mx-0">
               Creando momentos inolvidables en Guadalajara y Zapopan.
             </p>
           </div>
-          <div
-            class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-300"
-          >
-            <h5 class="font-bold text-[#1d0c0e] dark:text-white">
-              Horarios de Entrega
-            </h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-600">
+            <h5 class="font-bold text-[#1d0c0e]">Horarios de Entrega</h5>
             <p>Desayunos: de 8:00am a 11:30am</p>
             <p>Para regalos sin desayuno:</p>
             <p>De 9:00am a 2:00pm</p>
@@ -241,10 +216,8 @@ import "swiper/css";
               y horario.
             </p>
           </div>
-          <div
-            class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-300"
-          >
-            <h5 class="font-bold text-[#1d0c0e] dark:text-white">Contacto</h5>
+          <div class="flex flex-col gap-2 text-sm text-gray-600">
+            <h5 class="font-bold text-[#1d0c0e]">Contacto</h5>
             <a class="hover:text-primary transition-colors" href="#"
               >Instagram</a
             >

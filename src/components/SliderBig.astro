@@ -26,7 +26,7 @@ const bigPacksWithImages = await Promise.all(
 <section>
   <div class="mb-8 flex flex-col items-center text-center">
     <h3
-      class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] dark:text-white sm:text-3xl"
+      class="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#1d0c0e] sm:text-3xl"
     >
       BIG LOVE <span class="text-primary">❤️</span>
     </h3>
@@ -38,7 +38,7 @@ const bigPacksWithImages = await Promise.all(
         bigPacksWithImages.map((el) => {
           return (
             <div class="swiper-slide">
-              <div class="block group relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-surface-light dark:bg-surface-dark p-1 shadow-gold hover:shadow-pop-hover transition-all">
+              <div class="block group relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-surface-light p-1 shadow-gold hover:shadow-pop-hover transition-all">
                 <div class="grid md:grid-cols-2">
                   <div class="relative h-64 md:h-auto overflow-hidden rounded-xl md:rounded-r-none">
                     <Picture
@@ -54,10 +54,10 @@ const bigPacksWithImages = await Promise.all(
                     </div>
                   </div>
                   <div class="flex flex-col justify-center p-6 md:p-8">
-                    <h4 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+                    <h4 class="mb-2 text-2xl font-bold text-gray-900">
                       {el.name}
                     </h4>
-                    <p class="mb-6 text-gray-600 dark:text-gray-300">
+                    <p class="mb-6 text-gray-600">
                       La experiencia completa. Incluye arreglo floral grande,
                       botella de Moët &amp; Chandon, chocolates artesanales y
                       tarjeta personalizada en papel algodón.
@@ -65,7 +65,7 @@ const bigPacksWithImages = await Promise.all(
                     <ul class="mb-8 space-y-2">
                       {el.content.map((i) => {
                         return (
-                          <li class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300">
+                          <li class="flex items-center gap-3 text-sm text-gray-700">
                             <span class="material-symbols-outlined text-gold">
                               check_circle
                             </span>
@@ -75,7 +75,7 @@ const bigPacksWithImages = await Promise.all(
                       })}
                     </ul>
                     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                      <span class="text-3xl font-black text-[#1d0c0e] dark:text-white">
+                      <span class="text-3xl font-black text-[#1d0c0e]">
                         {el.price.toLocaleString("es-MX", {
                           currency: "MXN",
                           style: "currency",

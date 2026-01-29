@@ -68,13 +68,13 @@ export default function ShoppingCart() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-white dark:bg-gray-900 shadow-2xl z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${
           isVisible ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+          <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
             🛒 Carrito
             {totalItems > 0 && (
               <span className="bg-blue-500 text-white text-xs font-bold rounded-full px-2 py-1">
@@ -84,11 +84,11 @@ export default function ShoppingCart() {
           </h2>
           <button
             onClick={handleClose}
-            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors cursor-pointer"
+            className="p-2 hover:bg-gray-100 rounded-full transition-colors cursor-pointer"
             aria-label="Cerrar carrito"
           >
             <svg
-              className="w-6 h-6 text-gray-600 dark:text-gray-300"
+              className="w-6 h-6 text-gray-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -108,10 +108,8 @@ export default function ShoppingCart() {
           {items.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-center">
               <div className="text-6xl mb-4">🛍️</div>
-              <p className="text-gray-500 dark:text-gray-400 text-lg">
-                Tu carrito está vacío
-              </p>
-              <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
+              <p className="text-gray-500 text-lg">Tu carrito está vacío</p>
+              <p className="text-gray-400 text-sm mt-2">
                 Agrega productos para comenzar
               </p>
             </div>
@@ -120,7 +118,7 @@ export default function ShoppingCart() {
               {items.map((item) => (
                 <div
                   key={item.id}
-                  className="flex gap-3 bg-gray-50 dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 animate-fadeIn"
+                  className="flex gap-3 bg-gray-50 p-3 rounded-lg border border-gray-200 animate-fadeIn"
                 >
                   <img
                     src={item.imageSrc}
@@ -128,10 +126,10 @@ export default function ShoppingCart() {
                     className="w-20 h-20 object-cover rounded-md"
                   />
                   <div className="flex-1 flex flex-col">
-                    <h3 className="font-semibold text-gray-900 dark:text-white text-sm mb-1 line-clamp-2">
+                    <h3 className="font-semibold text-gray-900 text-sm mb-1 line-clamp-2">
                       {item.name}
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    <p className="text-sm text-gray-600 mb-2">
                       ${item.price.toFixed(2)} MXN c/u
                     </p>
                     <div className="flex items-center gap-2 mt-auto">
@@ -139,31 +137,27 @@ export default function ShoppingCart() {
                         onClick={() =>
                           updateQuantity(item.id, item.quantity - 1)
                         }
-                        className="cursor-pointer w-7 h-7 flex items-center justify-center bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-md transition-colors"
+                        className="cursor-pointer w-7 h-7 flex items-center justify-center bg-gray-200 hover:bg-gray-300  rounded-md transition-colors"
                       >
-                        <span className="text-gray-700 dark:text-gray-200 font-bold">
-                          −
-                        </span>
+                        <span className="text-gray-700 font-bold">−</span>
                       </button>
-                      <span className="font-semibold text-gray-900 dark:text-white min-w-[2rem] text-center">
+                      <span className="font-semibold text-gray-900 min-w-[2rem] text-center">
                         {item.quantity}
                       </span>
                       <button
                         onClick={() =>
                           updateQuantity(item.id, item.quantity + 1)
                         }
-                        className="cursor-pointer w-7 h-7 flex items-center justify-center bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-md transition-colors"
+                        className="cursor-pointer w-7 h-7 flex items-center justify-center bg-gray-200 hover:bg-gray-300 rounded-md transition-colors"
                       >
-                        <span className="text-gray-700 dark:text-gray-200 font-bold">
-                          +
-                        </span>
+                        <span className="text-gray-700 font-bold">+</span>
                       </button>
-                      <span className="ml-auto font-bold text-gray-900 dark:text-white">
+                      <span className="ml-auto font-bold text-gray-900">
                         ${(item.price * item.quantity).toFixed(2)}
                       </span>
                       <button
                         onClick={() => removeCartItem(item.id)}
-                        className="cursor-pointer text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 p-1 transition-colors"
+                        className="cursor-pointer text-red-500 hover:text-red-600 p-1 transition-colors"
                         aria-label="Eliminar producto"
                       >
                         <svg
@@ -190,20 +184,16 @@ export default function ShoppingCart() {
 
         {/* Footer */}
         {items.length > 0 && (
-          <div className="border-t border-gray-200 dark:border-gray-700 p-4 space-y-3">
+          <div className="border-t border-gray-200 p-4 space-y-3">
             <div className="flex justify-between items-center">
-              <span className="text-gray-600 dark:text-gray-400">
-                Total productos:
-              </span>
-              <span className="font-bold text-lg text-gray-900 dark:text-white">
+              <span className="text-gray-600">Total productos:</span>
+              <span className="font-bold text-lg text-gray-900">
                 {totalItems}
               </span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-gray-600 dark:text-gray-400">
-                Costo total:
-              </span>
-              <span className="font-bold text-lg text-gray-900 dark:text-white">
+              <span className="text-gray-600">Costo total:</span>
+              <span className="font-bold text-lg text-gray-900">
                 {getCartTotal().toLocaleString("es-MX", {
                   style: "currency",
                   currency: "MXN",

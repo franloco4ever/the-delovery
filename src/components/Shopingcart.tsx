@@ -47,7 +47,7 @@ export default function ShoppingCart() {
     message += `\n📦 Total de productos: ${totalItems}`;
     message += `\n💰 Total: ${totalPrice.toFixed(2)} MXN`;
 
-    const whatsappNumber = "524421234567"; // Reemplaza con tu número
+    const whatsappNumber = "+523314099844"; // Reemplaza con tu número
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 

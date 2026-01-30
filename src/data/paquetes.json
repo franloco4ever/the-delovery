@@ -2,7 +2,7 @@
   {
     "id": "chico_1",
     "size": "chico",
-    "name": "Joy 1",
+    "name": "Mini 1",
     "price": 250,
     "img": "/src/assets/img_packages/CH-01.png",
     "content": [
@@ -15,7 +15,7 @@
   {
     "id": "chico_2",
     "size": "chico",
-    "name": "Joy 2",
+    "name": "Mini 2",
     "price": 250,
     "img": "/src/assets/img_packages/CH-02.png",
     "content": [
@@ -28,7 +28,7 @@
   {
     "id": "chico_3",
     "size": "chico",
-    "name": "Joy 3",
+    "name": "Mini 3",
     "price": 250,
     "img": "/src/assets/img_packages/CH-03.png",
     "content": [
@@ -40,7 +40,7 @@
   {
     "id": "chico_4",
     "size": "chico",
-    "name": "Joy 4",
+    "name": "Mini 4",
     "price": 250,
     "img": "/src/assets/img_packages/CH-04.png",
     "content": [
@@ -55,7 +55,7 @@
   {
     "id": "chico_5",
     "size": "chico",
-    "name": "Joy 5",
+    "name": "Mini 5",
     "price": 250,
     "img": "/src/assets/img_packages/CH-05.png",
     "content": [
@@ -67,7 +67,7 @@
   {
     "id": "chico_6",
     "size": "chico",
-    "name": "Joy 6",
+    "name": "Mini 6",
     "price": 250,
     "img": "/src/assets/img_packages/CH-06.png",
     "content": [
@@ -79,7 +79,7 @@
   {
     "id": "chico_7",
     "size": "chico",
-    "name": "Joy 7",
+    "name": "Mini 7",
     "price": 250,
     "img": "/src/assets/img_packages/CH-07.png",
     "content": [
@@ -91,7 +91,7 @@
   {
     "id": "mediano_1",
     "size": "mediano",
-    "name": "Morning 1",
+    "name": "Daily 1",
     "price": 250,
     "img": "/src/assets/img_packages/M-01.png",
     "content": [
@@ -108,7 +108,7 @@
   {
     "id": "mediano_2",
     "size": "mediano",
-    "name": "Morning 2",
+    "name": "Daily 2",
     "price": 250,
     "img": "/src/assets/img_packages/M-02.png",
     "content": [
@@ -124,7 +124,7 @@
   {
     "id": "mediano_3",
     "size": "mediano",
-    "name": "Morning 3",
+    "name": "Daily 3",
     "price": 250,
     "img": "/src/assets/img_packages/M-03.png",
     "content": [
@@ -155,7 +155,7 @@
   {
     "id": "mediano_5_nina",
     "size": "mediano",
-    "name": "Morning 5 niña",
+    "name": "Daily niña",
     "price": 250,
     "img": "/src/assets/img_packages/M-05-NINA.png",
     "content": [
@@ -169,7 +169,7 @@
   {
     "id": "mediano_5_nino",
     "size": "mediano",
-    "name": "Morning 5 niño",
+    "name": "Daily 5 niño",
     "price": 250,
     "img": "/src/assets/img_packages/M-05-NINO.png",
     "content": [
@@ -183,7 +183,7 @@
   {
     "id": "grande_1",
     "size": "grande",
-    "name": "Big Love 1",
+    "name": "Lover 1",
     "price": 250,
     "img": "/src/assets/img_packages/G-01.png",
     "content": [
@@ -199,7 +199,7 @@
   {
     "id": "grande_2",
     "size": "grande",
-    "name": "Big Love 2",
+    "name": "Lover 2",
     "price": 250,
     "img": "/src/assets/img_packages/G-02.png",
     "content": [
@@ -216,7 +216,7 @@
   {
     "id": "grande_3",
     "size": "grande",
-    "name": "Big Love 3",
+    "name": "Lover 3",
     "price": 250,
     "img": "/src/assets/img_packages/G-03.png",
     "content": [

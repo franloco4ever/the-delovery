@@ -2,208 +2,223 @@
   "productos_extra": [
     {
       "id": "extra_1",
-      "img": "",
+      "img": "/extras/globo_aire.svg",
       "name": "Globo metálico standar con aire",
       "price": 100
     },
     {
       "id": "extra_2",
-      "img": "",
+      "img": "/extras/globo_helio.svg",
       "name": "Globo metálico estándar con helio",
       "price": 100
     },
     {
       "id": "extra_3",
-      "img": "",
+      "img": "/extras/burbuja_aire.svg",
       "name": "Burbuja con texto personalizado y aire",
       "price": 100
     },
     {
       "id": "extra_4",
-      "img": "",
+      "img": "/extras/burbuja_helio_18.svg",
       "name": "Burbuja con texto personalizado y helio 18\"",
       "price": 100
     },
     {
       "id": "extra_5",
-      "img": "",
+      "img": "/extras/burbuja_helio_24.svg",
       "name": "Burbuja con texto personalizado y helio 24\"",
       "price": 100
     },
     {
       "id": "extra_6",
-      "img": "",
+      "img": "/extras/pastel_1.svg",
       "name": "Pastel individual con texto personalizado 1",
       "price": 100
     },
     {
       "id": "extra_7",
-      "img": "",
+      "img": "/extras/pastel_2.svg",
       "name": "Pastel individual con texto personalizado 2",
       "price": 100
     },
     {
       "id": "extra_8",
-      "img": "",
+      "img": "/extras/pastel_3.svg",
       "name": "Pastel individual con texto personalizado 3",
       "price": 100
     },
     {
       "id": "extra_9",
-      "img": "",
+      "img": "/extras/peluche_chico.svg",
       "name": "Peluche chico de temporada",
       "price": 100
     },
     {
       "id": "extra_10",
-      "img": "",
+      "img": "/extras/peluche_mediano.svg",
       "name": "Pelucha mediano de temporada",
       "price": 100
     },
     {
       "id": "extra_11",
-      "img": "",
+      "img": "/extras/peluche_grande.svg",
       "name": "Peluche grande de temporada",
       "price": 100
     },
     {
       "id": "extra_12",
-      "img": "",
+      "img": "/extras/lindor_bolsa_chica.svg",
       "name": "Chocolate lindor bolsa chica",
       "price": 100
     },
     {
       "id": "extra_13",
-      "img": "",
+      "img": "/extras/lindor_caja.svg",
       "name": "Chocolate lindor caja",
       "price": 100
     },
     {
       "id": "extra_14",
-      "img": "",
+      "img": "/extras/ferrero_4_pzas.svg",
       "name": "Chocolate ferrero 4 pzas",
       "price": 100
     },
     {
       "id": "extra_15",
-      "img": "",
+      "img": "/extras/ferrero_mediano.svg",
       "name": "Chocolate ferrero mediana",
       "price": 100
     },
     {
       "id": "extra_16",
-      "img": "",
+      "img": "/extras/ferrero_grande.svg",
       "name": "Chocolate ferrero grande",
       "price": 100
     },
-    { "id": "extra_17", "img": "", "name": "Nutella 200 gr", "price": 100 },
-    { "id": "extra_18", "img": "", "name": "Chocolate baileys", "price": 100 },
+    {
+      "id": "extra_17",
+      "img": "/extras/nutella.svg",
+      "name": "Nutella 200 gr",
+      "price": 100
+    },
+    {
+      "id": "extra_18",
+      "img": "/extras/baileys.svg",
+      "name": "Chocolate baileys",
+      "price": 100
+    },
     {
       "id": "extra_19",
-      "img": "",
+      "img": "/extras/kisses_almendra.svg",
       "name": "Kisses almendras 123gr",
       "price": 100
     },
     {
       "id": "extra_20",
-      "img": "",
+      "img": "/extras/kisses_cereza.svg",
       "name": "Kisses cerezas 120gr",
       "price": 100
     },
     {
       "id": "extra_21",
-      "img": "",
+      "img": "/extras/hersheys_coffee_creations.svg",
       "name": "Hersheys coffe creation 94.5gr",
       "price": 100
     },
     {
       "id": "extra_22",
-      "img": "",
+      "img": "/extras/rosa.svg",
       "name": "Un par de rosas con follaje (según temporada)",
       "price": 100
     },
     {
       "id": "extra_23",
-      "img": "",
+      "img": "/extras/arreglo_chico.svg",
       "name": "Arreglo pequeño de flores mixtas (gerberas y pequeñas con follaje)",
       "price": 100
     },
     {
       "id": "extra_24",
-      "img": "",
+      "img": "/extras/arreglo_grande.svg",
       "name": "Arreglo grande de flores mixtas (gerberas y pequeñas con follaje)",
       "price": 100
     },
     {
       "id": "extra_25",
-      "img": "",
+      "img": "/extras/vino.svg",
       "name": "Mini botella de vino tinto",
       "price": 100
     },
     {
       "id": "extra_26",
-      "img": "",
+      "img": "/extras/vino.svg",
       "name": "Mini botella de vino rosado",
       "price": 100
     },
     {
       "id": "extra_27",
-      "img": "",
+      "img": "/extras/vino.svg",
       "name": "Vino lambrusco, Concha y Toro, Finca las moras",
       "price": 100
     },
     {
       "id": "extra_28",
-      "img": "",
+      "img": "/extras/vino.svg",
       "name": "Vino Finca las moras",
       "price": 100
     },
-    { "id": "extra_29", "img": "", "name": "Vino 4 soles", "price": 100 },
+    {
+      "id": "extra_29",
+      "img": "/extras/vino.svg",
+      "name": "Vino 4 soles",
+      "price": 100
+    },
     {
       "id": "extra_30",
-      "img": "",
+      "img": "/extras/cerveza.svg",
       "name": "Cerveza modelo cristal",
       "price": 100
     },
     {
       "id": "extra_31",
-      "img": "",
+      "img": "/extras/cerveza.svg",
       "name": "Cerveza heineken cristal",
       "price": 100
     },
     {
       "id": "extra_32",
-      "img": "",
+      "img": "/extras/cerveza.svg",
       "name": "Cerveza high miller cristal",
       "price": 100
     },
     {
       "id": "extra_33",
-      "img": "",
+      "img": "/extras/cerveza.svg",
       "name": "Cerveza corona cristal",
       "price": 100
     },
     {
       "id": "extra_34",
-      "img": "",
+      "img": "/extras/portarretrato.svg",
       "name": "Portarretrato con foto 4x6 in / 15 x 20 cm",
       "price": 100
     },
     {
       "id": "extra_35",
-      "img": "",
+      "img": "/extras/termo.svg",
       "name": "Termo con vinil personalizado (colores disponibles)",
       "price": 100
     },
     {
       "id": "extra_36",
-      "img": "",
+      "img": "/extras/ramo_chico.svg",
       "name": "Ramo de rosas (12 pzas)",
       "price": 100
     },
     {
       "id": "extra_37",
-      "img": "",
+      "img": "/extras/ramo_grande.svg",
       "name": "Ramo de rosas (24 pzas)",
       "price": 100
     }

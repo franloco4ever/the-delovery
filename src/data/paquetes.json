@@ -139,7 +139,7 @@
   {
     "id": "mediano_4",
     "size": "mediano",
-    "name": "Morning 4",
+    "name": "Daily 4",
     "price": 250,
     "img": "/src/assets/img_packages/M-04.png",
     "content": [
@@ -169,7 +169,7 @@
   {
     "id": "mediano_5_nino",
     "size": "mediano",
-    "name": "Daily 5 niño",
+    "name": "Daily niño",
     "price": 250,
     "img": "/src/assets/img_packages/M-05-NINO.png",
     "content": [

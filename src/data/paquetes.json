@@ -228,5 +228,35 @@
       "Caja de chocolates ferrero (16 piezas)",
       "Portaretrato mediano con foto que nos manden"
     ]
+  },
+  {
+    "id": "grande_4",
+    "size": "grande",
+    "name": "Lover 4",
+    "price": 250,
+    "img": "/src/assets/img_packages/G-04.jpg",
+    "content": [
+      "Tela decorativa",
+      "Globo burbuja con pintura (2 colores a elegir) inflado con aire",
+      "⁠Vinil personalizado para globo",
+      "Frasco de jugo",
+      "⁠Frasco de leche",
+      "⁠Baguette",
+      "⁠Pastel mini"
+    ]
+  },
+  {
+    "id": "grande_5",
+    "size": "grande",
+    "name": "Lover 5",
+    "price": 250,
+    "img": "/src/assets/img_packages/G-05.jpg",
+    "content": [
+      "Caja de 40 x 30 con tela decorativa",
+      "⁠Desayuno starbucks: baguette, bebida y pastel. ",
+      "⁠Peluche pequeño de temporada a elegir. ",
+      "⁠Globo burbuja con pintura ",
+      "⁠Vinil para globo personalizado"
+    ]
   }
 ]

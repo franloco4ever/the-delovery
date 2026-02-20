@@ -186,6 +186,7 @@
     "name": "Lover 1",
     "price": 250,
     "img": "/src/assets/img_packages/G-01.png",
+    "description": "El despertar perfecto para celebrar el amor. Globo burbuja con brillantina, peluche de temporada, desayuno gourmet completo con hot cakes y yogurt griego, vino Lambrusco y un portaretrato con su foto favorita.",
     "content": [
       "Caja de 40x30",
       "Globo burbuja con brillantina",
@@ -202,6 +203,7 @@
     "name": "Lover 2",
     "price": 250,
     "img": "/src/assets/img_packages/G-02.png",
+    "description": "Sorpresa en canasta con guirnalda completa de globos personalizados. Incluye chocolates Lindt, vino tinto Lambrusco, desayuno artesanal y peluche especial en vaso de recuerdo.",
     "content": [
       "Canasta de 35cm con guirnalda completa de globos (2 colores a elegir)",
       "Caja de chocolates lindor grandes",
@@ -219,6 +221,7 @@
     "name": "Lover 3",
     "price": 250,
     "img": "/src/assets/img_packages/G-03.png",
+    "description": "La declaración de amor en canasta de madera. Globo burbuja personalizado con helio, guirnalda de globos, peluche de temporada, vino Lambrusco, chocolates Ferrero y portaretrato con su fotografía.",
     "content": [
       "Canasta de madera con tela",
       "Guirnalda de globos (2 colores a elegir)",
@@ -235,6 +238,7 @@
     "name": "Lover 4",
     "price": 250,
     "img": "/src/assets/img_packages/G-04.jpg",
+    "description": "Desayuno sorpresa con toque artístico. Globo burbuja pintado a mano con mensaje personalizado, mini pastel, jugos artesanales y baguette recién horneada en presentación única.",
     "content": [
       "Tela decorativa",
       "Globo burbuja con pintura (2 colores a elegir) inflado con aire",
@@ -251,6 +255,7 @@
     "name": "Lover 5",
     "price": 250,
     "img": "/src/assets/img_packages/G-05.jpg",
+    "description": "Experiencia Starbucks con amor. Desayuno premium de Starbucks, globo burbuja personalizado con pintura artística, peluche de temporada y presentación elegante en caja decorada.",
     "content": [
       "Caja de 40 x 30 con tela decorativa",
       "⁠Desayuno starbucks: baguette, bebida y pastel. ",

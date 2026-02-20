@@ -57,11 +57,7 @@ const bigPacksWithImages = await Promise.all(
                     <h4 class="mb-2 text-2xl font-bold text-gray-900">
                       {el.name}
                     </h4>
-                    <p class="mb-6 text-gray-600">
-                      La experiencia completa. Incluye arreglo floral grande,
-                      botella de Moët &amp; Chandon, chocolates artesanales y
-                      tarjeta personalizada en papel algodón.
-                    </p>
+                    <p class="mb-6 text-gray-600">{el.description}</p>
                     <ul class="mb-8 space-y-2">
                       {el.content.map((i) => {
                         return (
